@@ -15,7 +15,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const MongoDBStore = require("connect-mongo");
 
 const Book = require('./models/books');
-const port = process.env.PORT || process.env.PORTS;
+const port = process.env.PORT || 3000;
 
 
 const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/yelpCamp';
@@ -35,12 +35,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.json());
+// app.use(express.json());
 
 
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.send("hello");
 });
 
 app.get('/add-note', (async (req, res) => {
@@ -80,3 +80,4 @@ app.get('/', (async(req, res) => {
 app.listen(port, () => {
     console.log(`Listening from PORT: ${port}`);
 });
+
