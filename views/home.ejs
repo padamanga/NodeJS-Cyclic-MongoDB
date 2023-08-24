@@ -1,0 +1,168 @@
+
+<!--<-% layout('layouts/homBoilerplate')%->-->
+
+<!--&lt;!&ndash;<link rel="stylesheet" href="/css/app.css">&ndash;&gt;-->
+
+<!--<div class="row mb-3 col-6 offset-3">-->
+<!--    <h1>Yelp Camp</h1>-->
+
+<!--    <a href="/campgrounds">Campground List</a>-->
+<!--</div>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.css">
+<!--    <link rel="stylesheet" href="/css/footer.css">-->
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-left mb-0">YelpCamp</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-right">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                <% if(!currentUser) { %>
+                    <a class="nav-link" href="/login">Login</a>
+                    <a class="nav-link" href="/register">Register</a>
+                <% } else { %>
+                    <a class="nav-link" href="/logout">Logout</a>
+                <% } %>
+            </nav>
+        </div>
+    </header>
+    <main class="px-3">
+        <h1>YelpCamp</h1>
+        <p class="lead"> Welcome to YelpCamp! <br> Jump right in and explore our many campgrounds. <br>
+            Feel free to share some of your own and comment on others!</p>
+        <a href="/campgrounds" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">View
+            Campgrounds</a>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p>&copy; 2020 </p>
+    </footer>
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="card-body">-->
+<!--    <h1 class=" text-center mb-5">BOOK YOUR OUTDOOR ADVENTURE</h1>-->
+<!--    <form class="d-flex col-5 offset-7">-->
+<!--        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+<!--    </form>-->
+<!--</div>-->
+
+
+<!--<div class="row row-cols-1 row-cols-md-2 g-4 mb-4">-->
+
+<!--    <div class="col">-->
+<!--        <div class="card">-->
+<!--            <img src="https://www.reserveamerica.com/webphotos/racms/articles/images/251e087d-993d-4abe-b615-e9eee880d8c1_image2_GettyImages-1325801443BoatLaunchHero.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Barren River Lake State Resort Park, Kentucky</h5>-->
+<!--                <p class="card-text">-->
+<!--                    What better way to spend the dog days of summer than cooling-->
+<!--                    off and relaxing on a boating and camping trip? Staying at a-->
+<!--                    campground with a boat launch makes your camping and boating-->
+<!--                    trip even better. The good news is that there are many state-->
+<!--                    park campgrounds with boat launches across the country.-->
+<!--                    We have seven campgrounds with a boat launch featured below.-->
+<!--                    And be sure to check out fishing information for your state,-->
+<!--                    if you plan on doing any fishing during your trip.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--        <div class="card">-->
+<!--            <img src="https://www.reserveamerica.com/webphotos/racms/articles/images/251e087d-993d-4abe-b615-e9eee880d8c1_image2_lakescott-KS-copy.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Ray Roberts Lake State Park (Johnson Branch), Texas</h5>-->
+<!--                <p class="card-text">-->
+<!--                    Located just one hour’s drive south of Memphis, John W. Kyle State-->
+<!--                    Park is not far from the city, but it feels a world apart. The park-->
+<!--                    offers a wide array of recreational opportunities, including fishing,-->
+<!--                    boating, water skiing, and swimming on Sardis Lake. There’s also-->
+<!--                    a golf course, a large ballroom for gatherings, and 225 campsites,-->
+<!--                    including 20 cabins and four villas.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--        <div class="card">-->
+<!--            <img src="https://www.reserveamerica.com/webphotos/racms/articles/images/b010597e-8ec9-4395-8150-358ce46ef954_image2_GettyImages-846010444BannerCampgroundsforWildflowerViewing.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">John W Kyle State Park, Mississippi</h5>-->
+<!--                <p class="card-text">-->
+<!--                    Look around and you may realize that you see wildflowers all-->
+<!--                    of the time. They are on wall art, murals, t-shirts, floral-->
+<!--                    arrangements, and even inspire songs. But you only get to see-->
+<!--                    real wildflowers that inspire art at certain times of the year.-->
+<!--                    Arguably the best time to see wildflowers is in Spring when certain-->
+<!--                    landscapes are transformed for a few weeks by the erupting beauty of-->
+<!--                    wildflowers. So get out and enjoy a Spring wildflower camping trip before-->
+<!--                    it is too late! Plan a trip at one of these campgrounds, where you can-->
+<!--                    revel in the passing glory of spring wildflowers.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--        <div class="card">-->
+<!--            <img src="https://www.reserveamerica.com/webphotos/racms/articles/images/0f1938bc-369c-4885-8343-b895f035fe94_image2_GettyImages-526717600ValleyoftheRogueCampgroundsforWildflowerViewing.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Prineville Reservoir State Park, Oregon</h5>-->
+<!--                <p class="card-text">-->
+<!--                    For an outstanding wildflower viewing camping trip, come to-->
+<!--                    the Blue Ridge Escarpment, an area where the majesty of the-->
+<!--                    Blue Ridge Mountains plunges into rolling foothills.-->
+<!--                    Trek one of the many trails, including one to Rainbow Falls,-->
+<!--                    to spot wildflowers, or stay near the visitor’s center and-->
+<!--                    spot many of the indengious flora. Considered one of the best-->
+<!--                    spots in the state for spring flowers, expect to see all sorts-->
+<!--                    of shapes and colors. Look for: Wild iris, lady slippers,-->
+<!--                    Jack-in-the-pulpit, halberd yellow violets, Catesby’s trilliums,-->
+<!--                    solomon seals, and fairy wands.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

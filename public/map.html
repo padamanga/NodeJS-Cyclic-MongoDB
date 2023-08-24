@@ -1,0 +1,37 @@
+<!--API KEY:  AIzaSyBAwCrO5q0m45I5eRHCVLba6aNc9Ie4I0M-->
+
+
+
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map Example</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h3>My Map Example</h3>
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAwCrO5q0m45I5eRHCVLba6aNc9Ie4I0M"></script>
+<script>
+    function initMap() {
+        // Map options
+        var options = {
+            center: { lat: 37.7749, lng: -122.4194 },
+            zoom: 10
+        };
+
+        // Create a new map instance
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+        // Add markers or other map features as needed
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
